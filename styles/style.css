@@ -176,7 +176,7 @@ label {
 .orderList {
   width: 100%;
   max-height: 350px;
-  overflow: scroll;
+  /* overflow: scroll; */
   padding: 1.5rem;
 }
 
@@ -258,9 +258,33 @@ label {
   }
 
   .orderList {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inputContainer {
+    width: 16rem;
+    height: 16rem;
+  }
+  .listOutput {
     width: 100%;
-    max-height: 600px;
-    overflow: scroll;
-    padding: 2rem;
+    height: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  .orderList {
+    padding: 0;
+  }
+  .spanItem {
+    width: 80px;
+  }
+
+  .spanQuantity {
+    width: 80px;
   }
 }
